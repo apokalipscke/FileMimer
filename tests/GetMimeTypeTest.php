@@ -22,7 +22,8 @@ class GetMimeTypeTest extends TestCase
      */
     public function testGetMimeType()
     {
-        $this->assertEquals('AutoCAD', FileMimer::get('application/acad'));
+        $this->assertEquals('AutoCAD-Dateien (nach NCSA)', FileMimer::get('application/acad'));
+        $this->assertEquals('Excel (OpenOffice Calc)', FileMimer::get('application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'));
         $this->assertEquals('Windows Bitmap', FileMimer::get('image/bmp'));
     }
 

@@ -1,7 +1,7 @@
 {
     "name": "apokalipscke/file-mimer",
     "description": "Get the human file type name from mime types.",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "type": "library",
     "license": "MIT",
     "authors": [
