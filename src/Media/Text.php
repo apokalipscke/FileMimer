@@ -6,6 +6,9 @@ namespace Apokalipscke\FileMimer\Media;
 
 class Text extends AbstractMedia
 {
+    /**
+     * human file type name by subtype
+     */
     protected const types = [
         'comma-separated-values' => 'kommaseparierte Datendateien',
         'css' => 'CSS Stylesheet-Dateien',
