@@ -1,12 +1,19 @@
 <?php
 
+
 namespace Apokalipscke\FileMimer\Media;
 
-
-class Application
+/**
+ * Class Application
+ * @package Apokalipscke\FileMimer\Media
+ */
+class Application extends AbstractMedia
 {
-    public const types = [
-        'application/acad' => 'AutoCAD',
-        'application/applefile' => "AppleFile",
+    /**
+     * human file type name by subtype
+     */
+    protected const types = [
+        'acad' => 'AutoCAD',
+        'applefile' => "AppleFile",
     ];
 }
