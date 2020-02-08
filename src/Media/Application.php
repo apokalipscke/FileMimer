@@ -43,6 +43,8 @@ class Application extends AbstractMedia
         'vocaltec-media-file' => 'Vocaltec Media-Dateien',
         'vnd.openxmlformats-officedocument.spreadsheetml.sheet' => 'Excel (OpenOffice Calc)',
         'vnd.openxmlformats-officedocument.wordprocessingml.document' => 'Word (OpenOffice Writer)',
+        'vnd.wap.wmlc' => 'WMLC-Dateien (WAP)',
+        'vnd.wap.wmlscriptc' => 'WML-Script-C-dateien (WAP)',
         'xhtml+xml' => 'XHTML-Dateien',
         'xml' => 'XML-Dateien',
         'x-bcpio' => 'BCPIO-Dateien',
