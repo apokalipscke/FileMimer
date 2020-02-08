@@ -1,7 +1,7 @@
 {
     "name": "apokalipscke/file-mimer",
     "description": "Get the human file type name from mime types.",
-    "version": "0.2.3",
+    "version": "0.3.0",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -20,7 +20,8 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "php": ">=7.3"
+        "php": ">=7.3",
+        "symfony/http-foundation": "^5.0"
     },
     "require-dev": {
         "phpunit/phpunit": "9"

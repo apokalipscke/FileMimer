@@ -8,6 +8,7 @@ use Apokalipscke\FileMimer\Exception\MediaTypeNotFoundException;
 use Apokalipscke\FileMimer\Exception\InvalidMimeTypeException;
 use Apokalipscke\FileMimer\Media\AbstractMedia;
 use Exception;
+use Symfony\Component\HttpFoundation\File\File;
 
 class FileMimer
 {
@@ -34,5 +35,15 @@ class FileMimer
         }
 
         return $mediaClassName::getName($subtype);
+    }
+
+    /**
+     * @param File $file
+     * @return string
+     * @throws Exception
+     */
+    public static function getFromFile(File $file): string
+    {
+        return self::get($file->getMimeType());
     }
 }
