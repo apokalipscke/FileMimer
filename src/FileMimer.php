@@ -5,7 +5,7 @@ namespace Apokalipscke\FileMimer;
 
 
 use Apokalipscke\FileMimer\Exception\MediaTypeNotFoundException;
-use Apokalipscke\FileMimer\Exception\NotValidMimeTypeException;
+use Apokalipscke\FileMimer\Exception\InvalidMimeTypeException;
 use Apokalipscke\FileMimer\Media\AbstractMedia;
 use Exception;
 
@@ -19,7 +19,7 @@ class FileMimer
     public static function get(string $mime): string
     {
         if (preg_match('/^[-\w.]+\/[-\w.+]+$/', $mime) == false) {
-            throw new NotValidMimeTypeException();
+            throw new InvalidMimeTypeException();
         }
 
         $mimeType = explode('/', $mime);
