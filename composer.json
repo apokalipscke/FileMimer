@@ -1,0 +1,29 @@
+{
+    "name": "apokalipscke/file-mimer",
+    "description": "Get the human file type name from mime types and files.",
+    "version": "0.4.2",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marc Lipscke",
+            "email": "marlip1901@gmail.com"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Apokalipscke\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.3",
+        "symfony/http-foundation": "^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9"
+    }
+}
