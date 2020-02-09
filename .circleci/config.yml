@@ -19,3 +19,5 @@ jobs:
           paths:
             - vendor
       - run: ./vendor/bin/phpunit
+      - store_artifacts:
+          path: coverage
