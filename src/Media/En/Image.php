@@ -8,6 +8,7 @@ use Apokalipscke\FileMimer\Media\AbstractMedia;
 /**
  * Class Image
  * @package Apokalipscke\FileMimer\Media
+ * @author Marc Lipscke <marlip1901@gmail.com>
  */
 class Image extends AbstractMedia
 {

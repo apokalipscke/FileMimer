@@ -14,6 +14,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Class GetMimeTypeTest
  * @package Apokalipscke\FileMimer\tests
+ * @author Marc Lipscke <marlip1901@gmail.com>
  */
 class FileMimerExceptionTest extends TestCase
 {

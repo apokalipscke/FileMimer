@@ -11,6 +11,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Class ImageMediaTest
  * @package Apokalipscke\FileMimer\tests
+ * @author Marc Lipscke <marlip1901@gmail.com>
  */
 class ImageMediaTest extends TestCase
 {

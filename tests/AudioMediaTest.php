@@ -11,6 +11,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Class AudioMediaTest
  * @package Apokalipscke\FileMimer\tests
+ * @author Marc Lipscke <marlip1901@gmail.com>
  */
 class AudioMediaTest extends TestCase
 {

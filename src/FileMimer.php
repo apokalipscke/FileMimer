@@ -4,12 +4,17 @@
 namespace Apokalipscke\FileMimer;
 
 
-use Apokalipscke\FileMimer\Exception\MediaTypeNotFoundException;
 use Apokalipscke\FileMimer\Exception\InvalidMimeTypeException;
+use Apokalipscke\FileMimer\Exception\MediaTypeNotFoundException;
 use Apokalipscke\FileMimer\Media\AbstractMedia;
 use Exception;
 use Symfony\Component\HttpFoundation\File\File;
 
+/**
+ * Class FileMimer
+ * @package Apokalipscke\FileMimer
+ * @author Marc Lipscke <marlip1901@gmail.com>
+ */
 class FileMimer
 {
     /**
@@ -47,6 +52,7 @@ class FileMimer
     public static function getFromFile(string $filePath, string $language = 'en'): string
     {
         $file = new File($filePath);
+
         return self::get($file->getMimeType(), $language);
     }
 }

@@ -9,6 +9,7 @@ use Apokalipscke\FileMimer\Exception\MimeTypeNotFoundException;
 /**
  * Class AbstractMedia
  * @package Apokalipscke\FileMimer\Media
+ * @author Marc Lipscke <marlip1901@gmail.com>
  */
 abstract class AbstractMedia
 {

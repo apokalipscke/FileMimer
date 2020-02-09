@@ -6,6 +6,11 @@ namespace Apokalipscke\FileMimer\Media\En;
 
 use Apokalipscke\FileMimer\Media\AbstractMedia;
 
+/**
+ * Class Text
+ * @package Apokalipscke\FileMimer\Media\En
+ * @author Marc Lipscke <marlip1901@gmail.com>
+ */
 class Text extends AbstractMedia
 {
     /**

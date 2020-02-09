@@ -8,6 +8,7 @@ use Apokalipscke\FileMimer\Media\AbstractMedia;
 /***
  * Class Audio
  * @package Apokalipscke\FileMimer\Media
+ * @author Marc Lipscke <marlip1901@gmail.com>
  */
 class Audio extends AbstractMedia
 {
