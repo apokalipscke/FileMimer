@@ -18,4 +18,4 @@ jobs:
           key: composer-v1-{{ checksum "composer.lock" }}
           paths:
             - vendor
-      - run: php bin/phpunit
+      - run: ./vendor/bin/phpunit
