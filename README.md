@@ -19,6 +19,11 @@ use Apokalipscke\FileMimer\FileMimer;
 $fileTypeName = FileMimer::get('audio/mpeg');
 ```
 
+returns:
+```
+"MPEG Audio"
+```
+
 **get from file**
 ```php
 use Apokalipscke\FileMimer\FileMimer;
