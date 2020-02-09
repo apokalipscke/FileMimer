@@ -12,6 +12,16 @@
         <ini name="error_reporting" value="-1" />
     </php>
 
+    <logging>
+        <log type="coverage-html" target="./coverage"/>
+    </logging>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+
     <testsuites>
         <testsuite name="FileMimer test suite.">
             <directory>./tests/</directory>
