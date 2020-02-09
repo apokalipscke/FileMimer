@@ -7,7 +7,6 @@ namespace Apokalipscke\FileMimer\tests;
 use Apokalipscke\FileMimer\FileMimer;
 use Exception;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\HttpFoundation\File\File;
 
 /**
  * Class GetFromFileTest
@@ -20,8 +19,9 @@ class GetFromFileTest extends TestCase
      */
     public function testImageFromFile()
     {
-        $svgFile = new File(__DIR__ . "/Fixtures/LRbird0001.svg");
-
-        $this->assertEquals('Scalable Vector Graphics (SVG)', FileMimer::getFromFile($svgFile));
+        $this->assertEquals(
+            'Scalable Vector Graphics (SVG)',
+            FileMimer::getFromFile(__DIR__ . "/Fixtures/LRbird0001.svg")
+        );
     }
 }

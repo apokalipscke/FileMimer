@@ -14,10 +14,11 @@ class FileMimer
 {
     /**
      * @param string $mime
+     * @param string $language
      * @return string
      * @throws Exception
      */
-    public static function get(string $mime): string
+    public static function get(string $mime, string $language = 'en'): string
     {
         if (preg_match('/^[-\w.]+\/[-\w.+]+$/', $mime) == false) {
             throw new InvalidMimeTypeException();
@@ -28,7 +29,7 @@ class FileMimer
         $subtype = $mimeType[1];
 
         /** @var AbstractMedia $mediaClassName */
-        $mediaClassName = 'Apokalipscke\\FileMimer\\Media\\' . ucfirst($media);
+        $mediaClassName = 'Apokalipscke\\FileMimer\\Media\\' . ucfirst($language) . '\\' . ucfirst($media);
 
         if (!class_exists($mediaClassName)) {
             throw new MediaTypeNotFoundException();
@@ -38,12 +39,14 @@ class FileMimer
     }
 
     /**
-     * @param File $file
+     * @param string $filePath
+     * @param string $language
      * @return string
      * @throws Exception
      */
-    public static function getFromFile(File $file): string
+    public static function getFromFile(string $filePath, string $language = 'en'): string
     {
-        return self::get($file->getMimeType());
+        $file = new File($filePath);
+        return self::get($file->getMimeType(), $language);
     }
 }

@@ -1,7 +1,9 @@
 <?php
 
 
-namespace Apokalipscke\FileMimer\Media;
+namespace Apokalipscke\FileMimer\Media\En;
+
+use Apokalipscke\FileMimer\Media\AbstractMedia;
 
 /***
  * Class Audio
