@@ -19,7 +19,7 @@ class TextMediaTest extends TestCase
      */
     public function testGetImageFileTypeNames()
     {
-        $this->assertEquals('JavaScript-Dateien', FileMimer::get('text/javascript'));
-        $this->assertEquals('kommaseparierte Datendateien', FileMimer::get('text/comma-separated-values'));
+        $this->assertEquals('JavaScript Source File', FileMimer::get('text/javascript'));
+        $this->assertEquals('Comma-Seperated Values', FileMimer::get('text/csv'));
     }
 }

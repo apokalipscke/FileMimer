@@ -19,7 +19,7 @@ class VideoMediaTest extends TestCase
      */
     public function testGetVideoFileTypeNames()
     {
-        $this->assertEquals('MPEG-Videodateien', FileMimer::get('video/mpeg'));
-        $this->assertEquals('OGG-Dateien', FileMimer::get('video/ogg'));
+        $this->assertEquals('MPEG Video', FileMimer::get('video/mpeg'));
+        $this->assertEquals('Ogg Video', FileMimer::get('video/ogg'));
     }
 }

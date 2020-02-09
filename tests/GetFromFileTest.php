@@ -22,6 +22,6 @@ class GetFromFileTest extends TestCase
     {
         $svgFile = new File(__DIR__ . "/Fixtures/LRbird0001.svg");
 
-        $this->assertEquals('SVG-Dateien', FileMimer::getFromFile($svgFile));
+        $this->assertEquals('Scalable Vector Graphics (SVG)', FileMimer::getFromFile($svgFile));
     }
 }

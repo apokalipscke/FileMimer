@@ -19,7 +19,7 @@ class ImageMediaTest extends TestCase
      */
     public function testGetImageFileTypeNames()
     {
-        $this->assertEquals('SVG-Dateien', FileMimer::get('image/svg+xml'));
-        $this->assertEquals('Windows Bitmap-Datei', FileMimer::get('image/bmp'));
+        $this->assertEquals('Scalable Vector Graphics (SVG)', FileMimer::get('image/svg+xml'));
+        $this->assertEquals('Bitmap Image File', FileMimer::get('image/bmp'));
     }
 }

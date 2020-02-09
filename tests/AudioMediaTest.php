@@ -19,7 +19,7 @@ class AudioMediaTest extends TestCase
      */
     public function testGetAudioFileTypeNames()
     {
-        $this->assertEquals('MP3-Dateien', FileMimer::get('audio/mpeg'));
-        $this->assertEquals('OGG-Dateien', FileMimer::get('audio/ogg'));
+        $this->assertEquals('MPEG Audio', FileMimer::get('audio/mpeg'));
+        $this->assertEquals('Ogg Audio', FileMimer::get('audio/ogg'));
     }
 }

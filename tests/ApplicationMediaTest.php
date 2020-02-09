@@ -19,7 +19,14 @@ class ApplicationMediaTest extends TestCase
      */
     public function testGetApplicationFileTypeNames()
     {
-        $this->assertEquals('AutoCAD-Dateien (nach NCSA)', FileMimer::get('application/acad'));
-        $this->assertEquals('Excel (OpenOffice Calc)', FileMimer::get('application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'));
+        $this->assertEquals(
+            'Adobe AIR Application',
+            FileMimer::get('application/vnd.adobe.air-application-installer-package+zip')
+        );
+
+        $this->assertEquals(
+            'Microsoft Office – OOXML – Spreadsheet',
+            FileMimer::get('application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+        );
     }
 }
