@@ -33,7 +33,6 @@ class FileMimer
         $media = $mimeType[0];
         $subtype = $mimeType[1];
 
-        /** @var AbstractMedia $mediaClassName */
         $mediaClassName = 'Apokalipscke\\FileMimer\\Media\\' . ucfirst($language) . '\\' . ucfirst($media);
 
         if (!class_exists($mediaClassName)) {

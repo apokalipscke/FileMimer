@@ -1,14 +1,10 @@
 <?php
 
 
-namespace Apokalipscke\FileMimer\tests;
-
-
+use Apokalipscke\FileMimer\Exception\InvalidMimeTypeException;
 use Apokalipscke\FileMimer\Exception\MediaTypeNotFoundException;
 use Apokalipscke\FileMimer\Exception\MimeTypeNotFoundException;
-use Apokalipscke\FileMimer\Exception\InvalidMimeTypeException;
 use Apokalipscke\FileMimer\FileMimer;
-use Exception;
 use PHPUnit\Framework\TestCase;
 
 /**

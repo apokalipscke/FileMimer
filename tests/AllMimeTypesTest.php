@@ -1,9 +1,6 @@
 <?php
 
 
-namespace Apokalipscke\FileMimer\tests;
-
-
 use Apokalipscke\FileMimer\Media\En\Application;
 use Apokalipscke\FileMimer\Media\En\Audio;
 use Apokalipscke\FileMimer\Media\En\Image;

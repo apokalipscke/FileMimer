@@ -1,11 +1,7 @@
 <?php
 
 
-namespace Apokalipscke\FileMimer\tests;
-
-
 use Apokalipscke\FileMimer\FileMimer;
-use Exception;
 use PHPUnit\Framework\TestCase;
 
 /**
